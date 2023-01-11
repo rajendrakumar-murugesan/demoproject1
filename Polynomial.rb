@@ -1,3 +1,4 @@
+# added a header and additional text to check branches
 class Polynomial
   def initialize(sequence)
     if sequence.length < 2
