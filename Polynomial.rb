@@ -1,20 +1,17 @@
 class Polynomial
-  @sequence = []
   def initialize(sequence)
     if sequence.length < 2
       p  "Need at least 2 coefficients."
-      return
-    else
-      @sequence = sequence 
+      return 
     end
-    self.createString()
+    self.createString(sequence)
   end
 
-  def createString
+  def createString(sequence)
     # p "we are in create string #{@sequence}"
     @poly = ""
-    poly_length = @sequence.length  
-    @sequence.each do |digi|
+    poly_length = sequence.length  
+    sequence.each do |digi|
       poly_length -= 1
       # p digi, poly_length
       # no need to process if the digit is one 
