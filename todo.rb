@@ -3,7 +3,7 @@ array  = []
 while true 
   puts "enter x to exit "
   puts "what is your next todo?: "  
-  todo = gets.strip
+  todo = gets.chomp
   # debugger
   if todo == "x"
     break
