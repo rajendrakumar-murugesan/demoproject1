@@ -3,6 +3,7 @@ array  = []
 while true 
   puts "enter x to exit "
   puts "what is your next todo?: "  
+  # stripg the space and line carriage return
   todo = gets.chomp
   # debugger
   if todo == "x"
